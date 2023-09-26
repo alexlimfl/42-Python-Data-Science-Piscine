@@ -37,11 +37,13 @@ def main():
     csv.iloc[:, 1:] = csv.iloc[:, 1:].map(convert_to_numeric)
     country1 = csv[csv['country'] == 'France']
     country2 = csv[csv['country'] == 'Malaysia']
+    # country3 = csv[csv['country'] == 'Yemen']
     year = csv.columns[1:].astype(int).values
     year_2050 = year[year <= 2050]
     col_2050yr = len(year_2050) + 1
     plt.plot(year_2050, country1.values[0][1:col_2050yr], label='France')
     plt.plot(year_2050, country2.values[0][1:col_2050yr], label='Malaysia')
+    # plt.plot(year_2050, country3.values[0][1:col_2050yr], label='Yemen')
     plt.title('Population Projection')
 
     # x-axis
