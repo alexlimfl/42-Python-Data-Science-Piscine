@@ -11,3 +11,16 @@ NULL_not_found(Zero)
 NULL_not_found(Empty)
 NULL_not_found(Fake)
 print(NULL_not_found("Brian"))
+
+Nothing = None
+Garlic = float(1.5)
+Fake = False
+Zero = 0
+Empty = ""
+
+NULL_not_found(Nothing)
+NULL_not_found(Garlic)
+NULL_not_found(Zero)
+print(NULL_not_found(Empty))
+NULL_not_found(Fake)
+print(NULL_not_found("4.2"))

@@ -33,12 +33,15 @@ def str_to_morse(input_str):
             print(f"AssertionError: {e}")
             sys.exit(1)
         lst.append(NESTED_MORSE[char])
-    return lst
+        lst.append(' ')
+    return lst[:-1]
 
 
 def main():
     try:
-        if not only_alphanum(sys.argv[1]) and not only_alphanum(sys.argv[1]):
+        if len(sys.argv) < 2:
+            raise AssertionError("the arguments are bad")
+        elif not only_alphanum(sys.argv[1]):
             raise AssertionError("the arguments are bad")
     except AssertionError as e:
         print(f"AssertionError: {e}")

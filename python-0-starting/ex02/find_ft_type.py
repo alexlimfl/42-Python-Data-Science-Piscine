@@ -1,4 +1,5 @@
 def all_thing_is_obj(object: any) -> int:
+    """all thing is obj"""
     if type(object) is list:
         print("List :", type(object))
     if type(object) is tuple:
@@ -10,5 +11,7 @@ def all_thing_is_obj(object: any) -> int:
     if type(object) is str:
         print(object, "is in the kitchen :", type(object))
     if type(object) is int:
+        print("Type not found")
+    if type(object) is float:
         print("Type not found")
     return 42

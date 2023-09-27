@@ -6,4 +6,7 @@
 #     return filtered_lst
 
 def ft_filter(function, lst):
-    return [item for item in lst if function(item)]
+    """filters the string by function"""
+    if function:
+        return [item for item in lst if function(item)]
+    return (lst)

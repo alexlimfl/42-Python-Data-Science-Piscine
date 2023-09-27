@@ -55,24 +55,17 @@ def count_space(string):
     return count
 
 
-def count_argv(argv):
-    """counts argv"""
-    count = 0
-    for _ in argv[1:]:
-        count += 1
-    return count
-
-
 def main():
+    """main"""
     try:
-        if count_argv(sys.argv) > 1:
-            raise AssertionError("more than one argument")
+        if len(sys.argv) > 2:
+            raise AssertionError("can't have more than one argument")
     except AssertionError as e:
         print(f"AssertionError: {e}")
         sys.exit(1)
-    if count_argv(sys.argv) < 1:
-        input = "Hello World! "
-        print("What is the text to count?\n" + input)
+    if len(sys.argv) < 2:
+        print("What is the text to count?")
+        input = sys.stdin.readline()
     else:
         input = sys.argv[1]
     print(f"The text contains {count_char(input)} characters:")

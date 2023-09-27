@@ -1,4 +1,5 @@
 def NULL_not_found(object: any) -> int:
+    """null not found"""
     if object is None:
         print("Nothing: None", str(type(None)))
     elif type(object) is float and object != object:
