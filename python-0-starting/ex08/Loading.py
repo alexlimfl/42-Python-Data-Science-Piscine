@@ -1,9 +1,7 @@
-import time
 import shutil
-from datetime import datetime
 
 
-def ft_tqdm(lst:range) -> None:
+def ft_tqdm(lst: range) -> None:
     total = len(lst)
     prog_bar_w = shutil.get_terminal_size().columns - 40
     for i, item in enumerate(lst, start=1):
