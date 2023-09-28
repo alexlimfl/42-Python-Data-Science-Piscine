@@ -38,6 +38,7 @@ def str_to_morse(input_str):
 
 
 def main():
+    """main"""
     try:
         if len(sys.argv) < 2:
             raise AssertionError("the arguments are bad")
