@@ -19,4 +19,3 @@ def ft_tqdm(lst: range) -> None:
     progress_info = f"{progress_percentage}%{progress_bar} {i}/{total}"
     print(f"\r{progress_info}", end="", flush=True)
     yield item
-
