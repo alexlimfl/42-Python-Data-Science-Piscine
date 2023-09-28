@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ft-package
+Version: 0.0.1
+Summary: A sample test package
+Home-page: https://github.com/folim/ft_package
+Author: folim
+Author-email: folim@student.42kl.edu.my
+License: MIT
+License-File: LICENSE

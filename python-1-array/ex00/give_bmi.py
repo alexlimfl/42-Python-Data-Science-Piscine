@@ -1,7 +1,8 @@
 def give_bmi(height: list[int | float],
              weight: list[int | float]) -> list[int | float]:
     """gets BMI"""
-    if len(height) <= 0 or len(weight) <= 0:
+    if height is None or weight is None or \
+            len(height) <= 0 or len(weight) <= 0:
         print("Error: Empty list")
         return []
     if len(height) != len(weight):
