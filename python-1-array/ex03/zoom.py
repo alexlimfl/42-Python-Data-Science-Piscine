@@ -4,15 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def main():
-    """zoom-in image"""
-    pixel_arr = ft_load("animal.jpeg")
-    print(pixel_arr)
-    img = Image.fromarray(pixel_arr)
+def ft_zoom(pixel_arr):
+    """crops image from pixel array"""
 
+    img = Image.fromarray(pixel_arr)
     width, height = img.size
     # print(width, height)
-
     crop_size = 400
     x_coor = 140
     y_coor = -85
@@ -21,8 +18,17 @@ def main():
     right = left + crop_size
     bottom = top + crop_size
     # print(left, top, right, bottom)
-
     img2 = img.crop((left, top, right, bottom))
+    img2_arr = np.array(img2)
+    return img2_arr
+
+
+def main():
+    """main"""
+    pixel_arr = ft_load("animal.jpeg")
+    print(pixel_arr)
+    img2_arr = ft_zoom(pixel_arr)
+    img2 = Image.fromarray(img2_arr)
     img3 = img2.convert("L")
     img3_arr = np.array(img3)
     img3_shape2D = img3_arr.shape
