@@ -19,7 +19,6 @@ def give_bmi(height: list[int | float],
         bmi = w / (h * h)
         bmi_lst.append(bmi)
     return bmi_lst
-
 # We use a for loop with the zip() function to iterate
 # through both lists simultaneously. zip() combines elements from
 # both lists into pairs."

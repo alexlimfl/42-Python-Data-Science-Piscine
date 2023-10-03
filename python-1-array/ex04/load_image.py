@@ -2,13 +2,13 @@ from PIL import Image
 import numpy as np
 
 
-def ft_load(path: str) -> list:
+def ft_load(path: str):
     """loads image"""
     try:
         img = Image.open(path)
     except Exception as e:
         print("Error: ", str(e))
-        return []
+        return None
     # img_format = img.format
     pixels_arr = np.array(img)
     img.show()
