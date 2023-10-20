@@ -12,11 +12,26 @@ class Character(ABC):
         """Method to kill"""
         self.is_alive = False
 
+    def __str__(self) -> str:
+        """Descriptive string representation"""
+        return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
+       
+    def __repr__(self) -> str:
+        """More detailed and developer-oriented representation"""
+        return self.__str__()
+
 class Stark(Character): 
-    """Representing the Stark family."""
+    """Your docstring for Class"""
     def __init__(self, first_name, is_alive=True):
-        """Method to the construct/initialise class instance"""
+        """Your docstring for Constructor"""
         super().__init__(first_name, is_alive)
+    
+    def die(self):
+        """Your docstring for Method"""
+        self.is_alive = False
+
+
+
 
 # Ned = Stark("Ned")
 # print(Ned.__dict__)
