@@ -8,6 +8,7 @@ class Baratheon(Character):
         self.family_name = "Baratheon"
         self.eyes = "brown"
         self.hairs = "dark"
+        # print("A")
 
 class Lannister(Character):
     """Representing the Lannister family."""
@@ -17,6 +18,7 @@ class Lannister(Character):
         self.family_name = "Lannister"
         self.eyes = "blue"
         self.hairs = "light"
+        # print("B")
 
     @classmethod
     def create_lannister(cls,first_name, is_alive=True):
