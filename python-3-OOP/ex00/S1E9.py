@@ -30,6 +30,8 @@ class Stark(Character):
 # Lyanna = Stark("Lyanna", False)
 # print(Lyanna.__dict__)
 
+hodor = Character("hodor")
+
 """expected output:
 $> python tester.py
 {'first_name': 'Ned', 'is_alive': True}
