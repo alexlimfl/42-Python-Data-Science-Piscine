@@ -25,23 +25,4 @@ class King(Baratheon, Lannister):
 
     def get_hairs(self):
         """Method to return hair color object"""
-        return self.hairs        
-
-
-# Joffrey = King("Joffrey")
-# print(Joffrey.__dict__)
-# Joffrey.set_eyes("blue")
-# Joffrey.set_hairs("light")
-# print(Joffrey.get_eyes())
-# print(Joffrey.get_hairs())
-# print(Joffrey.__dict__)
-
-"""
-$> python tester.py
-{'first_name': 'Joffrey', 'is_alive': True, 'family_name': 'Baratheon', 'eyes': 'brown', 'hair': 'dark'}
-blue
-light
-{'first_name': 'Joffrey', 'is_alive': True, 'family_name': 'Baratheon', 'eyes': 'blue', 'hairs': 'light'}
-$>
-8
-"""
+        return self.hairs

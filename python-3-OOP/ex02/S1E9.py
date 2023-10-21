@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Character(ABC):
     """Your docstring for Class (Parent)"""
     @abstractmethod
@@ -15,17 +16,18 @@ class Character(ABC):
     def __str__(self) -> str:
         """Descriptive string representation"""
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
-       
+
     def __repr__(self) -> str:
         """More detailed and developer-oriented representation"""
         return self.__str__()
 
-class Stark(Character): 
+
+class Stark(Character):
     """Your docstring for Class"""
     def __init__(self, first_name, is_alive=True):
         """Your docstring for Constructor"""
         super().__init__(first_name, is_alive)
-    
+
     def die(self):
         """Your docstring for Method"""
         self.is_alive = False

@@ -25,3 +25,5 @@ Your docstring for Method
 {'first_name': 'Lyanna', 'is_alive': False}
 $>
 """
+
+# hodor = Character("hodor")
