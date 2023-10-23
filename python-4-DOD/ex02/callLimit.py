@@ -6,8 +6,10 @@ def callLimit(limit: int):
     a decorated function can call.
     """
     count = 0
+
     def callLimiter(function):
         """A nested function"""
+
         def limit_function(*args: any, **kwds: any):
             """
             A wrapper function that wraps around the original function
@@ -25,6 +27,7 @@ def callLimit(limit: int):
                 print("Error:", error)
         return limit_function
     return callLimiter
+
 
 """
 # @callLimit(3) is just an easier way of saying f = callLimit(3)
