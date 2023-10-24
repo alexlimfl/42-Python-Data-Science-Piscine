@@ -26,4 +26,4 @@ Your docstring for Method
 $>
 """
 
-# hodor = Character("hodor")
+hodor = Character("hodor")

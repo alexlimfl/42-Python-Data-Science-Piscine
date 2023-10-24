@@ -13,10 +13,15 @@ print("---")
 Cersei = Lannister("Cersei")
 print(Cersei.__dict__)
 print(Cersei.__str__)
+print(Cersei.__repr__) #
 print(Cersei.is_alive)
 print("---")
+Tywin = Lannister.create_lannister("Tywin", True)
+Tywin.die()
+print(f"Name : {Tywin.first_name, type(Tywin).__name__}, Alive : {Tywin.is_alive}")
 Jaine = Lannister.create_lannister("Jaine", True)
 print(f"Name : {Jaine.first_name, type(Jaine).__name__}, Alive : {Jaine.is_alive}")
+print(Jaine.__dict__)
 
 
 """
