@@ -30,3 +30,18 @@ class Lannister(Character):
         object = cls(first_name)
         object.is_alive = is_alive
         return object
+
+
+"""
+@classmethod:
+
+The @classmethod decorator is used to define a class method within a class.
+A class method is bound to the class and takes the class itself as its
+first argument (typically named cls). Class methods can be called on
+the class itself, and they can access and modify class-level attributes.
+Use cases:
+When a method operates on class-level data and requires access to
+the class itself.
+Factory methods that create instances of the class with specific
+characteristics.
+"""

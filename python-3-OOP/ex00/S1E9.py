@@ -19,3 +19,18 @@ class Stark(Character):
     def __init__(self, first_name, is_alive=True):
         """Method to the construct/initialise class instance"""
         super().__init__(first_name, is_alive)
+
+
+"""
+@abstractmethod:
+
+The @abstractmethod decorator is part of Python's abstract base class (ABC)
+module (abc) and is used to define abstract methods within an abstract class.
+An abstract method is a method that has no implementation in the abstract class
+and must be implemented by concrete subclasses. Abstract classes cannot be
+instantiated.
+Use cases:
+When you want to define a common interface or contract for multiple classes,
+requiring them to implement certain methods.
+Ensuring that specific methods are implemented in subclasses.
+"""

@@ -24,6 +24,20 @@ class calculator:
         print(f"Sous Vector is: {result}")
 
 
+"""
+@staticmethod:
+
+The @staticmethod decorator is used to define a static method
+within a class. A static method is a method that is bound to
+the class and not the instance. It can be called on the
+class itself, without needing to create an instance of the class.
+Use cases:
+When a method doesn't depend on instance-specific
+data and is primarily related to the class itself.
+Utility functions that are relevant to the class
+but don't need access to instance attributes.
+"""
+
 # names = ["Alice", "Bob", "Charlie"]
 # scores = [85, 92, 78]
 
